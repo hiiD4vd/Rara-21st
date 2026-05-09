@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Wedding Website | Cordially Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <a href="#" class="nav-logo">Rara's 21st</a>
+                <div class="nav-links desktop-only">
+                    <a href="#logistics">The Details</a>
+                    <a href="#activities">Activities</a>
+                    <a href="#dresscode">Dresscode</a>
+                </div>
+                <div class="nav-actions">
+                    <a href="#rsvp" class="btn-rsvp">I'm Ready!</a>
+                    <button class="menu-toggle mobile-only">
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-section" id="hero">
+            <div class="hero-bg-wrapper">
+                <img src="IMG_5632_Original.jpg" alt="Happy 21st, Rara" class="hero-main-img" style="object-position: 50% 64%;">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="hero-title-wrapper">
+                        <h1 class="hero-title" style="font-size: clamp(60px, 9vw, 110px);">Happy 21st, Rara</h1>
+                    </div>
+                    <div class="hero-bottom">
+                        <div class="hero-line"></div>
+                        <div class="scroll-prompt">
+                            <div class="bounce-arrow">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M7 13l5 5 5-5M12 6v12"></path>
+                                </svg>
+                            </div>
+                            <span>Scroll to explore</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Parallax Gallery Images -->
+            <div class="gallery-images">
+                <img class="gallery-img gallery-img-1" src="IMG_3625.jpg" alt="Gallery" style="object-position: 60% 50%;">
+                <img class="gallery-img gallery-img-2" src="IMG_5408.jpg" alt="Gallery" style="object-position: 50% 55%;">
+                <img class="gallery-img gallery-img-3" src="IMG_3680.JPG" alt="Gallery" style="object-position: 50% 50%;">
+                <img class="gallery-img gallery-img-4" src="IMG_5678_Original (1).jpg" alt="Gallery" style="object-position: 50% 90%;">
+            </div>
+        </section>
+
+        <section class="story-intro section-padding">
+            <p class="reveal-text intro-text">
+                <span>twenty-one</span> <span>years</span> <span>of</span> <span>bringing</span> <span>sunshine,</span> <span>joy,</span> <span>and</span> <span>endless</span> <span>love</span> <span>into</span> <span>this</span> <span>world...</span>
+            </p>
+        </section>
+
+        <section class="story-section" id="story">
+            <div class="story-sticky">
+                <div class="story-title-container">
+                    <h2 class="story-title">our story</h2>
+                </div>
+                
+                <div class="story-chapters">
+                    <div class="chapter chapter-1 active">
+                        <div class="chapter-content left">
+                            <h3>bab satu: hari pertama sekolah</h3>
+                            <p>Kita pertama kali bertemu saat kelas 1 SD. Setelah saling berkenalan di hari pertama, entah kenapa di hari kedua aku sadar kalau aku sudah jatuh cinta kepadamu, Rara.</p>
+                        </div>
+                    </div>
+                    <div class="chapter chapter-2">
+                        <div class="chapter-content right">
+                            <h3>bab dua: penantian panjang</h3>
+                            <p>Rasa cinta itu aku pendam bertahun-tahun lamanya—melewati masa SMP, SMA, hingga kuliah. Sampai akhirnya ada acara bukber di semester 6 dan kamu ikut. Di sanalah kita bertemu lagi, dan aku akhirnya memberanikan diri untuk menunjukkan perasaanku yang sebenarnya.</p>
+                        </div>
+                    </div>
+                    <div class="chapter chapter-3">
+                        <div class="chapter-content left">
+                            <h3>bab tiga: akhirnya bersama</h3>
+                            <p>Aku berjuang sepenuh hati untuk mendapatkan cintamu. Dan semua penantian panjang itu terbayar lunas ketika kamu menerimaku, dan kita resmi memulai perjalanan indah ini sebagai sepasang kekasih.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-cards">
+                    <!-- Chapter 1 -->
+                    <div class="story-card" data-chapter="1" style="transform: rotate(-2.5deg);">
+                        <div class="polaroid">
+                            <div class="polaroid-img"><img src="1.jpg" alt="" style="object-position: 50% 50%;"></div>
+                            <p class="polaroid-caption">&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="story-card" data-chapter="1" style="transform: rotate(1.8deg);">
+                        <div class="polaroid">
+                            <div class="polaroid-img"><img src="2.jpg" alt="" style="object-position: 50% 50%;"></div>
+                            <p class="polaroid-caption">&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="story-card" data-chapter="1" style="transform: rotate(-1.2deg);">
+                        <div class="polaroid">
+                            <div class="polaroid-img"><img src="3.jpg" alt="" style="object-position: 50% 50%;"></div>
+                            <p class="polaroid-caption">&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="story-card" data-chapter="1" style="transform: rotate(2.1deg);">
+                        <div class="polaroid">
+                            <div class="polaroid-img"><img src="4.jpg" alt="" style="object-position: 50% 50%;"></div>
+                            <p class="polaroid-caption">&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="story-card" data-chapter="1" style="transform: rotate(-3.0deg);">
+                        <div class="polaroid">
+                            <div class="polaroid-img"><img src="5.jpg" alt="" style="object-position: 50% 50%;"></div>
+                            <p class="polaroid-caption">&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="story-card" data-chapter="1" style="transform: rotate(1.5deg);">
+                        <div class="polaroid">
+                            <div class="polaroid-img"><img src="6.jpg" alt="" style="object-position: 50% 50%;"></div>
+                            <p class="polaroid-caption">&nbsp;</p>
+                        </div>
+                    </div>
+
+                    <!-- Chapter 2 -->
+                    <div class="story-card large" data-chapter="2" style="transform: rotate(-2.5deg);">
+                        <div class="polaroid">
+                            <div class="polaroid-img"><img src="7.jpg" alt="" style="object-position: 50% 50%;"></div>
+                            <p class="polaroid-caption">&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="story-card large" data-chapter="2" style="transform: rotate(1.8deg);">
+                        <div class="polaroid">
+                            <div class="polaroid-img"><img src="8.JPG" alt="" style="object-position: 50% 50%;"></div>
+                            <p class="polaroid-caption">&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="story-card large" data-chapter="2" style="transform: rotate(-1.2deg);">
+                        <div class="polaroid">
+                            <div class="polaroid-img"><img src="9.jpg" alt="" style="object-position: 50% 50%;"></div>
+                            <p class="polaroid-caption">&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="story-card large" data-chapter="2" style="transform: rotate(2.5deg);">
+                        <div class="polaroid">
+                            <div class="polaroid-img"><img src="10.jpg" alt="" style="object-position: 50% 50%;"></div>
+                            <p class="polaroid-caption">&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="story-card large" data-chapter="2" style="transform: rotate(-1.8deg);">
+                        <div class="polaroid">
+                            <div class="polaroid-img"><img src="11.jpg" alt="" style="object-position: 50% 50%;"></div>
+                            <p class="polaroid-caption">&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="story-card large" data-chapter="2" style="transform: rotate(3.2deg);">
+                        <div class="polaroid">
+                            <div class="polaroid-img"><img src="12.PNG" alt="" style="object-position: 50% 50%;"></div>
+                            <p class="polaroid-caption">&nbsp;</p>
+                        </div>
+                    </div>
+
+                    <!-- Chapter 3 -->
+                    <div class="story-card xlarge" data-chapter="3" style="transform: rotate(-2.5deg);">
+                        <div class="polaroid">
+                            <div class="polaroid-img"><img src="13.jpg" alt="" style="object-position: 50% 50%;"></div>
+                            <p class="polaroid-caption">&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="story-card xlarge" data-chapter="3" style="transform: rotate(1.8deg);">
+                        <div class="polaroid">
+                            <div class="polaroid-img"><img src="14.jpg" alt="" style="object-position: 50% 50%;"></div>
+                            <p class="polaroid-caption">&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="story-card xlarge" data-chapter="3" style="transform: rotate(-1.2deg);">
+                        <div class="polaroid">
+                            <div class="polaroid-img"><img src="15.jpg" alt="" style="object-position: 50% 50%;"></div>
+                            <p class="polaroid-caption">&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="story-card xlarge" data-chapter="3" style="transform: rotate(3.1deg);">
+                        <div class="polaroid">
+                            <div class="polaroid-img"><img src="16.jpg" alt="" style="object-position: 50% 50%;"></div>
+                            <p class="polaroid-caption">&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="story-card xlarge" data-chapter="3" style="transform: rotate(-2.1deg);">
+                        <div class="polaroid">
+                            <div class="polaroid-img"><img src="17.jpg" alt="" style="object-position: 50% 50%;"></div>
+                            <p class="polaroid-caption">&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="story-card xlarge" data-chapter="3" style="transform: rotate(1.5deg);">
+                        <div class="polaroid">
+                            <div class="polaroid-img"><img src="18.jpg" alt="" style="object-position: 50% 50%;"></div>
+                            <p class="polaroid-caption">&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="logistics" id="logistics">
+            <div class="logistics-intro">
+                <p class="reveal-text intro-text" style="margin-bottom: 40px;">
+                    <span>Jadi,</span> <span>apakah</span> <span>kamu</span> <span>bersedia</span> <span>meluangkan</span> <span>waktu</span> <span>di</span> <span>hari</span> <span>spesial</span> <span>ini?</span>
+                </p>
+                <h3 class="fade-up date-huge" style="font-size: clamp(50px, 10vw, 120px); text-transform: capitalize;">13 Mei 2026</h3>
+                
+                <div class="fade-up countdown">
+                    <div class="time-block">
+                        <span class="number" id="cd-days">0</span>
+                        <span class="label">Days</span>
+                    </div>
+                    <span class="colon">:</span>
+                    <div class="time-block">
+                        <span class="number" id="cd-hours">0</span>
+                        <span class="label">Hours</span>
+                    </div>
+                    <span class="colon">:</span>
+                    <div class="time-block">
+                        <span class="number" id="cd-minutes">0</span>
+                        <span class="label">Minutes</span>
+                    </div>
+                    <span class="colon">:</span>
+                    <div class="time-block">
+                        <span class="number" id="cd-seconds">0</span>
+                        <span class="label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="venue-details">
+                <div class="fade-up venue-img-container">
+                    <img src="cafe.png" alt="Shaera Coffee & Dessert" class="venue-img">
+                </div>
+                <div class="venue-info">
+                    <h4 class="venue-name">Shaera Coffee & Dessert</h4>
+                    <p class="venue-address" style="margin-bottom: 8px;">16:45 PM onwards</p>
+                </div>
+                <div class="rsvp-action">
+                    <a href="#rsvp" class="btn-rsvp-large">Yes, I'll be there!</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="activities-section" id="activities">
+            <div class="details-header" style="margin-bottom: 80px;">
+                <h2 class="fade-up details-title" style="font-size: clamp(60px, 8vw, 90px);">What are We Gonna Do?</h2>
+            </div>
+            
+            <div class="activity-list">
+                <div class="activity-item fade-up">
+                    <div class="activity-number">1.</div>
+                    <div class="activity-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#9c2727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                          <circle cx="5.5" cy="17.5" r="2.5"/>
+                          <circle cx="18.5" cy="17.5" r="2.5"/>
+                          <path d="M15 6h5v4l-2.5 3H15l-1-4-4-1.5"/>
+                          <path d="M5.5 15H8l2.5-6h2M12 9V5h-3"/>
+                        </svg>
+                    </div>
+                    <div class="activity-text">Pickup Princess</div>
+                </div>
+                <div class="activity-item fade-up">
+                    <div class="activity-number">2.</div>
+                    <div class="activity-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#9c2727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                          <circle cx="12" cy="12" r="7"/>
+                          <circle cx="12" cy="12" r="4"/>
+                          <path d="M3 4v6c0 1.1.9 2 2 2h1a2 2 0 0 0 2-2V4"/>
+                          <path d="M5.5 12v9"/>
+                          <path d="M20 4v17"/>
+                          <path d="M17 4c0 3 3 5 3 5"/>
+                        </svg>
+                    </div>
+                    <div class="activity-text">Dinner</div>
+                </div>
+                <div class="activity-item fade-up">
+                    <div class="activity-number">3.</div>
+                    <div class="activity-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#9c2727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M20 21H4v-8h16v8z"/>
+                          <path d="M20 13V9a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v4"/>
+                          <path d="M12 5V2"/>
+                          <path d="M12 2h1"/>
+                          <path d="M4 13h16"/>
+                          <path d="M4 17h16"/>
+                        </svg>
+                    </div>
+                    <div class="activity-text">Make a Wish</div>
+                </div>
+                <div class="activity-item fade-up">
+                    <div class="activity-number">4.</div>
+                    <div class="activity-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#9c2727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                          <rect x="3" y="8" width="18" height="4" rx="1"/>
+                          <path d="M12 8v13"/>
+                          <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/>
+                          <path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/>
+                        </svg>
+                    </div>
+                    <div class="activity-text">Prize Unboxing</div>
+                </div>
+                <div class="activity-item fade-up">
+                    <div class="activity-number">5.</div>
+                    <div class="activity-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#9c2727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M17 8h1a4 4 0 1 1 0 8h-1"/>
+                          <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/>
+                          <path d="M6 2v2"/>
+                          <path d="M10 2v2"/>
+                          <path d="M14 2v2"/>
+                        </svg>
+                    </div>
+                    <div class="activity-text">Deep Talks & Desserts</div>
+                </div>
+                <div class="activity-item fade-up">
+                    <div class="activity-number">6.</div>
+                    <div class="activity-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#9c2727" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                        </svg>
+                    </div>
+                    <div class="activity-text">Mengheningkan Cipta</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dresscode-section" id="dresscode">
+            <div class="details-header" style="margin-bottom: 40px;">
+                <h2 class="fade-up details-title" style="font-size: clamp(60px, 8vw, 90px); color: #9c2727;">What to Wear?</h2>
+                <p class="fade-up details-subtitle" style="max-width: 600px; margin: 0 auto; color: #5a5a5a;">A touch of elegance in dark tones. We'll be matching!</p>
+            </div>
+            <div class="dresscode-container fade-up">
+                <div class="dresscode-images">
+                    <!-- Him -->
+                    <div class="outfit">
+                        <div class="clothing-stack">
+                            <img src="baju cowok.png" alt="Baju Cowok" class="clothing-item">
+                            <img src="celana.png" alt="Celana" class="clothing-item pants">
+                        </div>
+                        <p class="outfit-label">For Him</p>
+                    </div>
+                    <div class="outfit-accent" style="display: none;">
+                        <span class="disco-emoji">🪩</span>
+                    </div>
+                    <!-- Her -->
+                    <div class="outfit">
+                        <div class="clothing-stack">
+                            <img src="baju cewk.png" alt="Baju Cewek" class="clothing-item">
+                            <img src="celana.png" alt="Celana" class="clothing-item pants">
+                        </div>
+                        <p class="outfit-label">For the Princess</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="vision-section section-padding">
+            <p class="reveal-text vision-text">
+                <span>Rara,</span> <span>terima</span> <span>kasih</span> <span>karena</span> <span>sudah</span> <span>menjadi</span> <span>bagian</span> <span>terindah</span> <span>dalam</span> <span>hidupku.</span> <span>Aku</span> <span>berharap</span> <span>perayaan</span> <span>kecil</span> <span>ini</span> <span>bisa</span> <span>memberikan</span> <span>senyum</span> <span>terlebar</span> <span>di</span> <span>wajahmu.</span> <span>Selamat</span> <span>ulang</span> <span>tahun,</span> <span>Sayang.</span> <span>I</span> <span>love</span> <span>you</span> <span>more</span> <span>than</span> <span>words</span> <span>can</span> <span>say.</span>
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <img src="16.jpg" alt="Footer Background">
+            <div class="footer-overlay"></div>
+            <div class="footer-content">
+                <h2>here's to celebrating you today, tomorrow, and always.</h2>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
