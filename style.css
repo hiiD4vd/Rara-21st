@@ -569,7 +569,8 @@ h1, h2, h3, h4, h5, h6, .hero-title, .story-title, .date-huge, .details-title, .
 
 .venue-img {
     width: 100%;
-    height: auto;
+    height: 40vh;
+    object-fit: cover;
     display: block;
 }
 
