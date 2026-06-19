@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Countdown Timer
-    const targetDate = new Date('May 13, 2026 16:45:00').getTime();
+    const targetDate = new Date('June 30, 2026 16:45:00').getTime();
     function updateCountdown() {
         const now = new Date().getTime();
         const distance = targetDate - now;
